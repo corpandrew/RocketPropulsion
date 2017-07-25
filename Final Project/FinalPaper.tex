@@ -1,0 +1,96 @@
+\documentclass{article}
+\usepackage[top=2.54cm, left=2.54cm, right=2.54cm, bottom=2.54cm]{geometry}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{multirow}
+\hypersetup{colorlinks=true, urlcolor=blue,}
+\usepackage[svgnames]{xcolor}
+\usepackage{siunitx}
+\renewcommand{\arraystretch}{1.3}
+\setlength{\parskip}{1em}
+
+\usepackage{graphicx}
+
+\begin{document}
+% Title Page
+\begin{titlepage}
+
+	\centering
+	{\Large Computational Physics \\ PHYS 3800 \par}
+	\vspace{0.25cm}
+	{\Large Homework 03 \par}
+	\vspace{2cm}
+	
+	{\huge \textbf{ Rocket Propulsion} \par}
+	\vspace{1cm}
+	
+	{\large Andrew Corp * \\ Department of Sciences, Wentworth Institute of Technology \\ 550 Hungtington Avenue, Boston, MA 02115}
+	
+		{\large Darrien Kennedy $\dagger$ \\ Department of Sciences, Wentworth Institute of Technology \\ 550 Hungtington Avenue, Boston, MA 02115}
+
+	{\large \today \par}
+\end{titlepage}
+\newpage
+
+{\centering \textbf{Abstract} \par}
+
+Abstract goes here
+
+\section{Introduction}
+
+\section{Theory}
+
+\section{Computational Method \& Techniques}
+
+\begin{equation}
+\frac{dv}{dt} = \frac{Ru_{ex}}{m_i-Rt}-g
+\end{equation}
+
+\begin{equation}
+\int{dv} = \int{\frac{Ru_{ex}}{m_i-Rt}} - \int{g dt}
+\end{equation}
+
+\begin{equation}
+v_f-v_o = Ru_{ex}\int{\frac{1}{m_i-Rt}}dt - gt
+\end{equation}
+
+pull out the mass
+
+\begin{equation}
+v = Ru_{ex}\int{\frac{1}{1-\frac{Rt}{m_i}}}dt - gt
+\end{equation}
+Apply Integral substitution denoted with p \\
+$p = 1-\frac{Rt}{m_i}$
+$dp = - \frac{R}{m_i}dt$
+
+\begin{equation}
+\int{\frac{1}{u}(-\frac{m_i}{R})du}
+\end{equation}
+\begin{equation}
+- \frac{m_i}{uR}
+\end{equation}
+\begin{equation}
+\int{-\frac{m_i}{Ru} du}
+\end{equation}
+
+Take the constant out
+\begin{equation}
+-\frac{m_i}{R} \int{\frac{1}{u}du}
+\end{equation}
+
+\begin{equation}
+= -\frac{m_i}{R}ln|u|
+\end{equation}
+
+\begin{equation}
+= -\frac{m_i}{R}ln|\frac{1}{1-\frac{Rt}{m_i}}|
+\end{equation}
+
+\section{Results}
+
+\section{Conclusion}
+
+\end{document}
