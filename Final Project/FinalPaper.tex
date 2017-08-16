@@ -1,16 +1,13 @@
-\documentclass{article}
+\documentclass[11pt]{article}
 \usepackage[top=2.54cm, left=2.54cm, right=2.54cm, bottom=2.54cm]{geometry}
 \usepackage{amsmath}
 \usepackage{graphicx}
-\usepackage{booktabs}
+
 \usepackage{hyperref}
 \usepackage{multicol}
 \usepackage{multirow}
 \hypersetup{colorlinks=true, urlcolor=blue,}
-\usepackage[svgnames]{xcolor}
-\usepackage{siunitx}
-\renewcommand{\arraystretch}{1.3}
-\setlength{\parskip}{1em}
+
 
 \usepackage{graphicx}
 
@@ -44,10 +41,41 @@ Abstract goes here
 \section{Theory}
 
 \section{Computational Method \& Techniques}
+The rocket equation for a rocket's velocity can be derived from Newton's second law:
+\begin{equation}
+F = ma
+\end{equation}
+where $F$ is the force, $m$ is the mass of the object and $a$ is the acceleration. Knowing that the $Ru_{ex}$ also known as the force of thrust, is to be taken into account for the velocity of the rocket, which acceleration is the first derivative of velocity so the equation can be rewritten as
 
 \begin{equation}
-\frac{dv}{dt} = \frac{Ru_{ex}}{m_i-Rt}-g
+Ru_{ex} = m \frac{dv}{dt}
 \end{equation}
+
+\noindent and the equation for fuel mass would be 
+
+\begin{equation}
+m = m_i - Rt
+\end{equation}
+
+\noindent where $m_i$ is the initial mass, $R$ is the rate at which the fuel is burned (burn rate), and $t$ is the amount of time that has gone by. Incorporating this into our equation would result in
+
+\begin{equation}
+Ru_{ex} = m_i - Rt \frac{dv}{dt}
+\end{equation}
+
+\noindent and if we solve for $\frac{dv}{dt}$ it becomes
+
+\begin{equation}
+\frac{dv}{dt} = \frac{Ru_{ex}}{m_i - Rt}.
+\end{equation} 
+
+Finally after accounting for the acceleration due to gravity from the rocket traveling out of our atmosphere we get our rocket equation
+
+\begin{equation}
+\frac{dv}{dt} = \frac{Ru_{ex}}{m_i-Rt}-g .
+\end{equation}
+
+Of course it should be noted that with the rocket equation we are not accounting for air resistance. As you likely know, air resistance is the force acting against the rocket as it exits the atmosphere, which would mean that the results from our calculations should not be taken literally.
 
 \begin{equation}
 \int{dv} = \int{\frac{Ru_{ex}}{m_i-Rt}} - \int{g dt}
@@ -88,6 +116,20 @@ Take the constant out
 \begin{equation}
 = -\frac{m_i}{R}ln|\frac{1}{1-\frac{Rt}{m_i}}|
 \end{equation}
+
+The approximation is calculated using Euler's method which is pretty easy to grasp as
+
+\begin{equation}
+next = previous + dt * f(x)
+\end{equation}
+
+\noindent where our function is $\frac{dv}{dt}$ instead of $f(x)$. The value for the approximate velocity is initialized to zero and gradually builds up over time.
+
+
+\section{Implementation}
+For implementation, we wrote a FORTRAN 90 program which calculates the exact values and approximate values of the time until the rocket burns all of its fuel. The percent error is also calculated from the difference between the exact value and approximate value. Finally the mass of the fuel is calculated over time. All four of these calculation's values are stored in respective files in order to allow for easy plotting of the data using \textit{Xmgrace}. The data files are \textbf{rocket.dat} for the approximate value, \textbf{rocket\_exact.dat} for the exact value, \textbf{error.dat} for the percent error, and \textbf{mass\_change.dat} for the change in fuel mass over time.
+
+The user is prompted for a timestep which they would like to be used for the program, the lower timestep the more data is generated and the more precise the graphs will appear. We then use the initial values based off of the Saturn-V rocket specifications and calculate the time at which all of the fuel is exausted. Then in a while loop we loop through while a time value, which is initialized to zero, is less than the calculated burn time. In this loop is where all of our calculations are performed, in calculating the exact value, approximate value, percent error and fuel mass. The files are then updated with their respective values in relation to time. Finally the time is then updated based off of the timestep. After the loop is complete, the files are closed and the program terminates.
 
 \section{Results}
 
