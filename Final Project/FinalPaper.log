@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  17 AUG 2017 00:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  17 AUG 2017 10:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -309,25 +309,25 @@ Package: multicol 2016/04/07 v1.8p multicolumn formatting (FMi)
 (/usr/local/texlive/2016/texmf-dist/tex/latex/multirow/multirow.sty
 \bigstrutjot=\dimen135
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 9.
+Package hyperref Info: Option `colorlinks' set `true' on input line 10.
 
 (./FinalPaper.aux)
 \openout1 = `FinalPaper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -401,7 +401,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 144.
 )
-Package hyperref Info: Link coloring ON on input line 12.
+Package hyperref Info: Link coloring ON on input line 13.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -411,9 +411,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count129
 )
-LaTeX Info: Redefining \ref on input line 12.
-LaTeX Info: Redefining \pageref on input line 12.
-LaTeX Info: Redefining \nameref on input line 12.
+LaTeX Info: Redefining \ref on input line 13.
+LaTeX Info: Redefining \pageref on input line 13.
+LaTeX Info: Redefining \nameref on input line 13.
 
 (./FinalPaper.out) (./FinalPaper.out)
 \@outlinefile=\write3
@@ -426,62 +426,62 @@ V.jpg, id=33, 549.252pt x 689.4558pt>
 File: SaturnV.jpg Graphic file (type jpg)
 
 <use SaturnV.jpg>
-Package pdftex.def Info: SaturnV.jpg used on input line 45.
+Package pdftex.def Info: SaturnV.jpg used on input line 50.
 (pdftex.def)             Requested size: 192.24107pt x 241.31314pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.57 \end{equation}
+l.62 \end{equation}
                     [1 <./SaturnV.jpg>] [2]
-Underfull \hbox (badness 10000) in paragraph at lines 140--141
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
 
  []
 
 [3] <velocity01.pdf, id=70, 794.97pt x 614.295pt>
 File: velocity01.pdf Graphic file (type pdf)
  <use velocity01.pdf>
-Package pdftex.def Info: velocity01.pdf used on input line 154.
+Package pdftex.def Info: velocity01.pdf used on input line 159.
 (pdftex.def)             Requested size: 357.7332pt x 276.43019pt.
  [4 <./velocity01.pdf, page is rotated 90 degrees>]
 <velocity2.pdf, id=81, 794.97pt x 614.295pt>
 File: velocity2.pdf Graphic file (type pdf)
  <use velocity2.pdf>
-Package pdftex.def Info: velocity2.pdf used on input line 161.
+Package pdftex.def Info: velocity2.pdf used on input line 166.
 (pdftex.def)             Requested size: 357.7332pt x 276.43019pt.
  [5 <./velocity2.pdf, page is rotated 90 degrees>] <error.pdf, id=92, 794.97pt 
 x 614.295pt>
 File: error.pdf Graphic file (type pdf)
 
 <use error.pdf>
-Package pdftex.def Info: error.pdf used on input line 168.
+Package pdftex.def Info: error.pdf used on input line 173.
 (pdftex.def)             Requested size: 357.7332pt x 276.43019pt.
  [6 <./error.pdf, page is rotated 90 degrees>]
 <fuelMassChange.pdf, id=105, 794.97pt x 614.295pt>
 File: fuelMassChange.pdf Graphic file (type pdf)
  <use fuelMassChange.pdf>
-Package pdftex.def Info: fuelMassChange.pdf used on input line 176.
+Package pdftex.def Info: fuelMassChange.pdf used on input line 181.
 (pdftex.def)             Requested size: 357.7332pt x 276.43019pt.
 
 [7 <./fuelMassChange.pdf, page is rotated 90 degrees>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 195.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 200.
  [8]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 195.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 200.
  (./FinalPaper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 195.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 195.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 200.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 200.
 Package rerunfilecheck Info: File `FinalPaper.out' has not changed.
 (rerunfilecheck)             Checksum: C30B7C22D4E46B21A934FE43D9FFACF9;254.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 195.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 200.
  ) 
 Here is how much of TeX's memory you used:
- 6389 strings out of 493014
- 93426 string characters out of 6133351
+ 6391 strings out of 493014
+ 93450 string characters out of 6133351
  194189 words of memory out of 5000000
- 9828 multiletter control sequences out of 15000+600000
- 10055 words of font info for 36 fonts, out of 8000000 for 9000
+ 9829 multiletter control sequences out of 15000+600000
+ 10223 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,8n,28p,814b,349s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,8n,28p,822b,351s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
@@ -491,11 +491,12 @@ r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/
 local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
 cal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/loca
 l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local
-/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on FinalPaper.pdf (9 pages, 1200707 bytes).
+/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/
+texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on FinalPaper.pdf (9 pages, 1214168 bytes).
 PDF statistics:
- 169 PDF objects out of 1000 (max. 8388607)
- 137 compressed objects within 2 object streams
+ 177 PDF objects out of 1000 (max. 8388607)
+ 144 compressed objects within 2 object streams
  39 named destinations out of 1000 (max. 500000)
  66 words of extra memory for PDF output out of 10000 (max. 10000000)
 
