@@ -32,7 +32,7 @@
 
 {\centering \textbf{Abstract} \par}
 
-Abstract goes here
+Rocket Propulsion is a complicated physics topic that really came to be known in the late 60's and early 70's. Using the Saturn V's data, Euler's method, and the "Rocket Equation" we are able to calculate the velocity at any given time of a rocket through travel. We are also able to find connections between the payload and the thrust. 
 
 \section{Introduction}
 \par Saturn V was a rocket that started being constructed/researched in 1964, it was finished in 1967. This rocket was the largest and most powerful rocket built to date, it had 5 engines (which weighed 18,500 $lbs$ each). When the rocket was full with what it needed for the mission, it weighed about 6.5 million $lbs$. It was about 360 $ft$ tall, which is 60 feet taller than the Statue of Liberty! The rocket also generated about 7.6 million pounds of thrust at launch! 
@@ -40,11 +40,15 @@ Abstract goes here
 \vspace{.25cm}
 This rocket went on 13 missions, with only 1 partial failure. Most of these missions were the Apollo missions. The rocket had 3 stages, each used for a separate part of its trip to the moon. "The first stage lifted the rocket to an altitude of about 68 kilometers (42 miles). The second stage carried it from there almost into orbit. The third stage placed the Apollo spacecraft into Earth orbit and pushed it toward the moon. The first two stages fell into the ocean after separation. The third stage either stayed in space or hit the moon." \cite{saturnv}
 
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.35]{SaturnV.jpg}
+\caption{Saturn V - The most powerful and largest spaceship}
+\end{figure}
+
 \vspace{.25cm}
 
-We decided to use Saturn V's rocket data, because of its remarkable accomplishments for our calculations.
-
-%\section{Theory}
+We decided to use Saturn V's rocket data, because of its remarkable accomplishments, for our calculations.
 
 \section{Computational Method \& Techniques}
 The rocket equation for a rocket's velocity can be derived from Newton's second law:
@@ -66,7 +70,7 @@ m = m_i - Rt
 \noindent where $m_i$ is the initial mass, $R$ is the rate at which the fuel is burned (burn rate), and $t$ is the amount of time that has gone by. Incorporating this into our equation would result in
 
 \begin{equation}
-Ru_{ex} = m_i - Rt \frac{dv}{dt}
+Ru_{ex} = (m_i - Rt) \frac{dv}{dt}
 \end{equation}
 
 \noindent and if we solve for $\frac{dv}{dt}$ it becomes
@@ -143,6 +147,7 @@ As said above, we used \textit{Xmgrace} to create graphs of the data that was ou
 
 \vspace{0.25cm}
 
+\newpage
 This graph shows how well Euler's method does to approximate the rocket calculation. It is impossible to tell that there is a difference in the approximation and the exact velocity while the time step is .01 seconds. As the legend shows, the black circles (and line) is the approximation while the red line is the exact.
 \begin{figure}[H]
 \centering
@@ -163,6 +168,7 @@ Here is the percent error between the approximate and the exact:
 \includegraphics[scale=0.45]{error.pdf}
 \caption{Percent Error when dt = 2}
 \end{figure}
+\newpage
 Lastly, here is the graph of the change of mass over time. This is linear because looking at equation \eqref{eq:rocketeq} you can see that the denominator is $m_i - Rt$, which is linear, and this is what determines the current fuel at a given time. Also, the fuel mass does reach zero (after it burns all of the fuel).
 
 \begin{figure}[H]
@@ -172,7 +178,7 @@ Lastly, here is the graph of the change of mass over time. This is linear becaus
 \end{figure}
 
 \section{Conclusion}
-As you can see, by looking at the plots you can tell a few things. One of which is Euler's method does a great job when you perform many iterations, but not as well when you don't. Looking at the first plot compared to the second, Euler's doesn't do great and that is because of this.
+As you can see, by looking at the plots you can tell a few things. One of which is Euler's method does a great job when you perform many iterations, but not as well when you don't. Looking at the first plot compared to the second, Euler's doesn't do great and that is because of this. To prove that error exists when the time step is 2 seconds, there is a graph to show it. It nearly gets to 5 \% error. I believe that even though we decided not to account for air resistance, the code that we have written will be able to calculate the correct exact equation and use Euler's method correctly. By using these 2 equations we are able to see how a rocket speeds up over time and we are able to see the connection between payload and thrust.
 
 \newpage
 \begin{thebibliography}{9}
